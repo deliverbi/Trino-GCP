@@ -1,7 +1,7 @@
 # Trino-GCP Graceful Shutdown using Instance Groups.
 Trino GCP Graceful Shutdown Instance Groups Autoscaling etc
 
-Gracefull Shutdown Script
+Graceful Shutdown Script
 
 Download Script trino-workers-shutdown-resize.sh and place on A GCP VM or Airflow Server. chmod file for execution and run with the following parameters.
 
