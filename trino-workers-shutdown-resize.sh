@@ -1,5 +1,5 @@
 #!/bin/bash
-# DELIVERBI Trino Gracefull Shutdown GCP Instance Groups
+# DELIVERBI Trino Graceful Shutdown GCP Instance Groups
 # Shahed Munir
 # Production Date 18/10/2021
 #Auto Scaling - Trino Node Delivery.
@@ -49,7 +49,7 @@ if [ -z "$4" ]
     exit
     fi	
 
-#List Number of Instances required to be decommisioned in Signal Shutdown and Signal Gracefull Shutdown to Trino
+#List Number of Instances required to be decommisioned in Signal Shutdown and Signal Graceful Shutdown to Trino
 
 if [[ $P_signal == 'SIGNAL-SHUTDOWN' ]] ; then
 
@@ -68,7 +68,7 @@ v1=$workername
 
 echo "Shutdown Signal sent for $workername"
 
-#send shutdown to trino node gracefull shutdown only
+#send shutdown to trino node graceful shutdown only
 curl -v -X PUT -d '"SHUTTING_DOWN"' -H "Content-type: application/json" http://$workername:8060/v1/info/state --header "X-Trino-User: admin"
 
 echo "Signal Sent to Trino Worker"
