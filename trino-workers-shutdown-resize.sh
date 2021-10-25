@@ -3,13 +3,12 @@
 # Shahed Munir
 # Production Date 18/10/2021
 #Auto Scaling - Trino Node Delivery.
-#Invoke Command ./trino-workers-shutdown-resize.sh 1 SIGNAL-SHUTDOWN group-analytics-trino-worker-group-highmem16 0
-#Invoke Command ./trino-workers-shutdown-resize.sh 0 SHUTDOWN group-analytics-trino-worker-group-highmem16 0 --Invoke SIGNAL-SHUTDOWN First
-#Invoke Command ./trino-workers-shutdown-resize.sh 0 RESIZE group-analytics-trino-worker-group-highmem16 1
-#Invoke Command ./trino-workers-shutdown-resize.sh 0 SHUTDOWN-RESIZE group-analytics-trino-worker-group-highmem16 1 --Invoke SIGNAL-SHUTDOWN First
+#Invoke Command ./trino-workers-shutdown-resize.sh 1 SIGNAL-SHUTDOWN trino-worker-group-highmem16 0
+#Invoke Command ./trino-workers-shutdown-resize.sh 0 SHUTDOWN trino-worker-group-highmem16 0 --Invoke SIGNAL-SHUTDOWN First
+#Invoke Command ./trino-workers-shutdown-resize.sh 0 RESIZE trino-worker-group-highmem16 1
+#Invoke Command ./trino-workers-shutdown-resize.sh 0 SHUTDOWN-RESIZE trino-worker-group-highmem16 1 --Invoke SIGNAL-SHUTDOWN First
 #Helpers
 #SIGNAL-SHUTDOWN --Signal Trino to Shutdown, SHUTDOWN --remove physical machines, RESIZE --resize workers to x amount , SHUTDOWN-RESIZE remove and resize
-#Instance groups group-analytics-trino-worker-group-highmem16 , group-analytics-trino-worker-group
 #Param 1 Number Of Workers to Remove
 #Param 2 Signal
 #Param 3 Instance Group NAME (InstanceGroupName)
