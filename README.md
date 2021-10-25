@@ -1,4 +1,4 @@
-# Trino-GCP
+# Trino-GCP Gracefull Shutdown using Instance Groups.
 Trino GCP Gracefull Shutdown Instance Groups Autoscaling etc
 
 Gracefull Shutdown Script
